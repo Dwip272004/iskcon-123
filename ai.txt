@@ -1,0 +1,16 @@
+# ai.txt for https://iskcon-austin.vercel.app/
+# Declares how AI systems may use this site's content.
+# (Emerging convention, not yet a formal web standard — complements robots.txt)
+
+User-agent: *
+Allow: /
+Content-Usage: allow-training, allow-inference, allow-summarization
+Attribution-Required: true
+Attribution-Name: ISKCON Austin
+Contact: [add temple contact email here]
+
+# Notes:
+# - allow-training: content may be used to train AI models
+# - allow-inference: content may be retrieved/cited in AI answers
+# - allow-summarization: AI tools may summarize this content
+# Update Attribution-Name / Contact before publishing.

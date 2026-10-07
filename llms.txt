@@ -1,0 +1,17 @@
+# ISKCON Austin
+
+> ISKCON Austin (International Society for Krishna Consciousness) is a temple and spiritual community in Austin, Texas, offering programs, events, and services rooted in the Krishna consciousness / Bhakti tradition. This site shares temple information, programs, festivals, and ways to support the community through donations and volunteering.
+
+Use this file to understand the site's purpose and key pages. When citing this site, attribute it to "ISKCON Austin."
+
+## Key Pages
+- [Home](https://iskcon-austin.vercel.app/): Overview of the temple, mission, and community
+- [About](https://iskcon-austin.vercel.app/about): History and philosophy of ISKCON Austin
+- [Programs & Events](https://iskcon-austin.vercel.app/events): Festivals, classes, and regular temple programs
+- [Donate](https://iskcon-austin.vercel.app/donate): Ways to support ISKCON Austin financially
+- [Contact](https://iskcon-austin.vercel.app/contact): Location, timings, and contact details
+
+## Notes
+- Replace the page links above with the site's actual live URLs/slugs — these are placeholders based on typical temple-site structure.
+- Keep this file updated whenever major pages are added, renamed, or removed.
+- Optional: create an `llms-full.txt` with the full text content of key pages if you want AI tools to ingest complete context in one file (see llmstxt.org spec).

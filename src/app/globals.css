@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fffdf8;
+  --foreground: #241f14;
+
+  /* Brand palette — matches the proposal deck */
+  --color-navy: #1f3b57;
+  --color-navy-dark: #142839;
+  --color-gold: #b8860b;
+  --color-gold-light: #d9a520;
+  --color-cream: #fbf3e1;
+  --color-cream-deep: #f3e6c8;
+  --color-maroon: #7a2e2e;
+  --color-ink: #241f14;
+  --color-ink-soft: #4a4436;
+
+  /* Krishna-consciousness accent colors — used sparingly for devotional detail:
+     peacock (Krishna's feather), marigold (garlands, festival color),
+     vermilion (tilak/sindoor) */
+  --color-peacock: #0e5c5c;
+  --color-peacock-light: #1c8a86;
+  --color-marigold: #e2900f;
+  --color-vermilion: #a63a2e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-navy: var(--color-navy);
+  --color-navy-dark: var(--color-navy-dark);
+  --color-gold: var(--color-gold);
+  --color-gold-light: var(--color-gold-light);
+  --color-cream: var(--color-cream);
+  --color-cream-deep: var(--color-cream-deep);
+  --color-maroon: var(--color-maroon);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-peacock: var(--color-peacock);
+  --color-peacock-light: var(--color-peacock-light);
+  --color-marigold: var(--color-marigold);
+  --color-vermilion: var(--color-vermilion);
+
+  --font-display: "Georgia", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+  --font-sans: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Bump the root font size so every rem-based Tailwind text utility across
+   the site (text-sm, text-base, text-lg, etc.) scales up ~12.5% for
+   readability, while still respecting a visitor's own browser zoom/text
+   size settings (a percentage, not a fixed px, on purpose). */
+html {
+  font-size: 112.5%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Threshold bar — a temple-gate style tricolor rule used at the very top
+   of the page and as a section-transition accent. */
+.threshold-bar {
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--color-marigold),
+    var(--color-gold-light) 35%,
+    var(--color-peacock) 70%,
+    var(--color-marigold)
+  );
+}
+
+/* Marigold-garland edge: a scalloped bottom border, echoing a strand of
+   temple garland flowers, for banner strips. */
+.garland-edge {
+  position: relative;
+  padding-bottom: 14px;
+}
+.garland-edge::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 14px;
+  background-image: radial-gradient(circle at 7px 0, transparent 7px, var(--background) 7.5px);
+  background-size: 14px 14px;
+  background-repeat: repeat-x;
+}
+
+/* Subtle repeating rangoli-dot texture for dark/devotional backgrounds. */
+.pattern-dots {
+  background-image: radial-gradient(currentColor 1px, transparent 1.4px);
+  background-size: 22px 22px;
+}
